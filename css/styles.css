@@ -104,7 +104,7 @@ nav {
     width: 100%;
     height: 100vh;
     min-height: 50%;
-    background-image: url("./images/hero.png");
+    background-image: url("../images/hero.png");
     background-size: cover;
     background-position: center;
     justify-content: space-around;
@@ -272,17 +272,17 @@ nav {
 }
 
 .tea {
-    background-image: url("./images/strawberry-rhubarb-ginger-gin-cocktail-with-strawberry-heart-garnish-2-scaled.png");
+    background-image: url("../images/strawberry-rhubarb-ginger-gin-cocktail-with-strawberry-heart-garnish-2-scaled.png");
     background-size: cover;
 }
 
 .latte {
-    background-image: url("./images/matcha-latte-starting.png");
+    background-image: url("../images/matcha-latte-starting.png");
     background-size: cover;
 }
 
 .soda {
-    background-image: url("./images/strawb-soda.png");
+    background-image: url("../images/strawb-soda.png");
     background-size: cover;
 }
 
