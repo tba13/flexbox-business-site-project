@@ -1,0 +1,473 @@
+/* COLOR PALETTE
+dark brown: #312020;
+rose ebony: #604141;
+antique white: #FFEBD6;
+pink: #FFC2CE;
+mindaro: #D3DD92; */
+
+
+/* General Styles */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #604141;
+    width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-family: 'Monoton', sans-serif;
+    font-size: 3.5rem;
+    word-spacing: 0.35em;
+    align-self: center;
+    color: #FFEBD6;
+}
+
+h2 {
+    color: #604141;
+    font-size: 3rem;
+}
+
+h3 {
+    color: #604141;
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-family: 'Monoton', sans-serif;
+}
+
+a {
+    color: #FFEBD6;
+    text-decoration: none;
+    font-size: 1.75rem;
+}
+
+li {
+    color: #FFEBD6;
+}
+
+p {
+    color: #604141;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: #312020;
+    padding: 1em;
+    width: 100%;
+    height: auto;
+    z-index: 6;
+    top:0; 
+}
+
+.nav-links li {
+    display: inline-flex;
+    padding-left: 1em;
+}
+
+@media screen and (max-width: 1024px) {
+    nav h1 {
+        font-size: 2.5rem;
+    }
+
+    .nav-links a{
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    nav h1 {
+        font-size: 1.75rem;
+    }
+
+    .nav-links a{
+        font-size: 0.75rem;
+    }
+}
+
+/* Starting*/
+.starting {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    min-height: 50%;
+    background-image: url("/images/hero.png");
+    background-size: cover;
+    background-position: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 5.5em;
+}
+
+.starting h1 {
+    font-size: 7rem;
+    text-shadow: 1px 1px 2px #312020;
+}
+
+@media screen and (max-width: 1600px) {
+    .starting {
+        height: 90vh;
+        margin-top: 1.22em;
+    }
+    
+    .starting h1{
+        font-size: 5.5rem;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .starting {
+        height: 80vh;
+        margin-top: 1.22em;
+    }
+    
+    .starting h1{
+        font-size: 4.5rem;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .starting {
+        height: 70vh;
+        margin-top: 3.5em;
+    }
+
+    .starting h1 {
+        font-size: 4rem;
+        margin: 1em;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .starting {
+        height: 50vh;
+        margin-top: 3.75em;
+    }
+
+    .starting h1{
+        font-size: 3rem;
+        margin: 1em;
+    }
+}
+
+/* welcome banner */
+.welcome {
+    display: flex;
+    background-color: #FFEBD6;
+    margin: 2em 0.75em;
+    height: 30em;
+    border-radius: 30px;
+    justify-content: space-between;
+}
+
+.welcome img {
+    border-radius: 30px;
+    left: 0;
+}
+
+.welcome-text {
+    justify-items: center;
+    align-content: center;
+    width: auto;
+    height: 100%;
+    padding: 2em;
+    text-align: center;
+    text-shadow: 1px 3px 4px #31202042;
+}
+
+.welcome-text h1 {
+    color: #604141;
+    font-size: 5.5rem;
+    margin: 0.5em 0;
+}
+
+.welcome-text h2 {
+    font-size: 2.5rem;
+} 
+
+@media screen and (max-width: 1300px) {
+    .welcome {
+        height: 25em;
+    }
+
+    .welcome-text h1 {
+        font-size: 4rem;
+    }    
+
+    .welcome-text h2 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .welcome {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    
+    .welcome img {
+        width: 100%;
+        height: auto;
+    }
+
+    .welcome-text h1 {
+        font-size: 4rem;
+    }
+
+    .welcome-text h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Drink Selection */
+.drinks {
+    background-color: #604141;
+    width: auto;
+    min-height: 45em;
+    padding: 2em 0.75em;
+    justify-items: center;
+    align-content: center;
+}
+
+.drinks h2 {
+    color: #FFEBD6;
+    margin-bottom: 1em;
+    text-shadow: 1px 1px 2px #312020;
+}
+
+.drinks ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.drinks li {
+    display: flex;
+    width: 21em;
+    height: 26em;
+    margin: 0 0.5em 0.5em 0.5em;;
+    padding: 1.5em;
+    border-radius: 30px;
+    align-items: flex-end;
+    box-shadow: 0px 6px 10px #312020;
+}
+
+.drinks a {
+    align-items: end;
+}
+
+.tea {
+    background-image: url("/images/strawberry-rhubarb-ginger-gin-cocktail-with-strawberry-heart-garnish-2-scaled.png");
+    background-size: cover;
+}
+
+.latte {
+    background-image: url("/images/matcha-latte-starting.png");
+    background-size: cover;
+}
+
+.soda {
+    background-image: url("/images/strawb-soda.png");
+    background-size: cover;
+}
+
+@media screen and (max-width: 742px) {
+    .drinks li {
+        width: 16em;
+        height: 21em;
+    }
+
+    .drinks a {
+        font-size: 1.5rem;
+    }
+}
+/*Locations*/
+.locations {
+    background-color: #FFEBD6;
+    height: auto;
+    margin: 2em 0.75em;
+    border-radius: 30px;
+    padding: 2em;
+    font-size: 1.25rem;
+}
+
+.locations ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 200px;
+    justify-content: space-around;
+}
+
+.locations li {
+    width: 45%;
+    height: auto;
+    margin: 1em;
+}
+
+.locations-img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.locations-text {
+    margin-top: 0.5rem;
+}
+
+.locations h2 {
+    justify-self: center;
+    margin-bottom: 0.5em;
+}
+
+.locations h3 {
+    margin-bottom: 0.25em;
+}
+
+.locations a {
+    color: #604141;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1300px) {
+    .locations h3 {
+        font-size: 1rem;
+    }
+
+    .locations p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 925px) {
+    .locations li {
+        width: 100%;
+    }
+    
+}
+/* Team */
+.team {
+    margin: 2em 0.75em;
+    border-radius: 30px;
+    padding: 2em;
+    background-color: #312020;
+}
+
+.team h2 {
+    color: #FFEBD6;
+    justify-self: center;
+    margin-bottom: 0.5em;
+}
+
+.team ul {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.team li {
+   width: 40%;
+   margin: 0 1em;
+}
+
+.team-img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    margin-bottom: 1em;
+}
+
+.team-text {
+    justify-items: center; 
+}
+
+.team-text h3, .team-text p {
+    color: #FFEBD6;
+}
+
+.team-text h3 {
+    margin-bottom: 0.5em;
+}
+
+@media screen and (max-width: 925px) {
+    .team li {
+        width: 45%;
+    }
+    
+    .team-text h3 {
+        font-size: 2rem;
+    }
+
+    .team-text p {
+        font-size: 1rem;
+    }
+}
+/* footer */
+footer {
+    display: flex;
+    height: 2.5em;
+    width: 100%;
+    padding: 0 1rem;
+    background-color: #FFC2CE;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.footer-nav li {
+    padding: 0 0.5rem;
+}
+
+.footer-nav a {
+    font-size: 1rem;
+    color: #312020;
+    
+}
+
+.footer-nav img {
+    height: 1.5em;
+    width: auto;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 530px) {
+    footer h4 {
+        font-size: 0.85rem;
+    }
+
+    .footer-nav a {
+        font-size: 0.85rem;
+    }
+    
+}
+/* Buttons */ 
+.button-primary {
+    color: #312020 ;
+    background-color: #FFEBD6;
+    padding: 0.25em 0.35em 0.20em 0.35em ;
+    border-radius: 45em;
+}
+
+.button-secondary {
+    background-color: #604141;
+    padding: 0.25em 1em;
+    border-radius: 30px;
+}
